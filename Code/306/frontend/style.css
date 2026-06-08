@@ -1,0 +1,67 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(#74c7ff, #dff5ff);
+  min-height: 100vh;
+  color: #102033;
+}
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 30px;
+  text-align: center;
+}
+h1 {
+  font-size: 54px;
+  letter-spacing: 3px;
+  color: white;
+  text-shadow: 4px 4px #174a78;
+}
+.card {
+  background: white;
+  border-radius: 18px;
+  padding: 28px;
+  max-width: 430px;
+  margin: 20px auto;
+  box-shadow: 0 8px 25px rgba(0,0,0,.18);
+}
+input {
+  width: 100%;
+  padding: 14px;
+  margin: 10px 0;
+  border: 2px solid #d2d6dc;
+  border-radius: 10px;
+  font-size: 16px;
+}
+button {
+  width: 100%;
+  padding: 14px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 10px;
+  background: #49a832;
+  color: white;
+  font-weight: bold;
+  font-size: 17px;
+  cursor: pointer;
+}
+button:hover { opacity: .9; }
+.secondary { background: #2878d8; }
+.danger { background: #cc3b3b; }
+.hidden { display: none; }
+.gameBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px auto;
+  max-width: 900px;
+}
+.gameBar button { width: 120px; }
+canvas {
+  background: #87d8ff;
+  border: 5px solid #174a78;
+  border-radius: 12px;
+  max-width: 100%;
+}
+#gameMsg, #loginMsg, #regMsg { font-weight: bold; }

@@ -28,9 +28,38 @@
       <p id="regMsg"></p>
     </section>
 
-    
+    <section id="menuPage" class="card hidden">
+      <h2>Menü</h2>
+      <p>Angemeldet als: <b id="userDisplay"></b></p>
+
+      <div class="skin-box">
+        <h3>Skin</h3>
+        <p>Lade ein Bild hoch, das als Skin für den Spieler benutzt wird.</p>
+        <input type="file" id="skinInput" accept="image/*">
+      </div>
+
+      <button onclick="startGame()">Spiel starten</button>
+      <button class="secondary" onclick="loadScores()">Bestenliste</button>
+      <button class="danger" onclick="logout()">Logout</button>
+    </section>
+
+    <section id="gamePage" class="hidden">
+      <div class="gameBar">
+        <button onclick="showPage('menuPage')">Zurück</button>
+        <span>Zeit: <b id="timer">0.00</b>s</span>
+      </div>
+      <canvas id="game" width="900" height="450"></canvas>
+      <p id="gameMsg"></p>
+    </section>
+
+    <section id="scoresPage" class="card hidden">
+      <h2>Top 3 Bestzeiten</h2>
+      <ol id="scoreList"></ol>
+      <button onclick="showPage('menuPage')">Zurück</button>
+    </section>
+  </main>
+
   <script src="script.js"></script>
   <script src="game.js"></script>
-  </main>
 </body>
 </html>
