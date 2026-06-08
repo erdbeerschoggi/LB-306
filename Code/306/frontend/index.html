@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jump'n'Run</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>JUMP'N'RUN</h1>
+
+    <section id="loginPage" class="card">
+      <h2>Login</h2>
+      <input id="loginUsername" placeholder="Benutzername" />
+      <input id="loginPassword" type="password" placeholder="Passwort" />
+      <button onclick="login()">Login</button>
+      <button class="secondary" onclick="showPage('registerPage')">Registrieren</button>
+      <p id="loginMsg"></p>
+    </section>
+
+    <section id="registerPage" class="card hidden">
+      <h2>Registrieren</h2>
+      <input id="regUsername" placeholder="Benutzername" />
+      <input id="regPassword" type="password" placeholder="Passwort" />
+      <button onclick="register()">Registrieren</button>
+      <button class="secondary" onclick="showPage('loginPage')">Zurück zum Login</button>
+      <p id="regMsg"></p>
+    </section>
+
+    
+  <script src="script.js"></script>
+  <script src="game.js"></script>
+  </main>
+</body>
+</html>
